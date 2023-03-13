@@ -11,7 +11,38 @@ a {
     text-decoration: none;
 }
 
-.container {
+.container{
     min-height: 100vh;
     width: 100%;
 }
+
+.subcontainer{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+}
+
+.introduction .subcontainer {
+    display: flex; /* use flexbox layout */
+    flex-direction: column; /* align items vertically */
+    align-items: center; /* center items horizontally */
+  }
+  
+  .introduction .subcontainer h2 {
+    margin: 0; /* remove any default margin */
+  }
+  
+  .introduction .links {
+    display: flex; /* use flexbox layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .introduction .links li {
+    margin-right: 10px;
+  }
+  
+  .introduction .links li:last-child {
+    margin-right: 0;
+  }
