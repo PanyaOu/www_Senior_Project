@@ -20,6 +20,20 @@
           <li><a href="https://www.google.com" target="_blank">Google</a></li>
           <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
         </ul>
+        
+        
+        <div class="about">
+          <script src="https://apis.google.com/js/api.js"></script>
+
+          <body onload="displayAboutMe()">
+            <h1>About Me</h1>
+            <div id="about-me"></div>
+          </body>
+        </div>
+
+        <div class="centered-text">
+          <h2 class="no-indent">HEHAHHAHAHAHAHA</h2>
+        </div>
       </div>
     </div>
   </section>
@@ -29,24 +43,57 @@
   <section id="home" class="home container">
     <div class="project container">
       <h1>Title Page</h1>
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-          <a href="#introduction">Introduction</a>
-        </div>
-    </div>
+      <div>
+        <select id="scroll-to-section">
+          <option value="">Select a section</option>
+          <option value="#introduction">Introduction</option>
+          <option value="#project">Projects</option>
+          <option value="#other">Other</option>
+        </select>
+      </div>
   </section>
   <!-- Section2 end-->
 
-    <!-- Section2 start-->
-    <section class="other container">
-      <div class="other container">
-        <h1>Other</h1>
-      </div>
-    </section>
-    <!-- Section2 end-->
+
+  <!-- Section3 start-->
+  <section id="project" class="project container">
+    <div class="project container">
+      <h1>Projects</h1>
+      <ul>
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+        <li><a href="#project3">Project 3</a></li>
+      </ul>
+    </div>
+    <div id="project1" class="project1 container">
+      <h2>Project 1</h2>
+      <p>Description of Project 1 goes here</p>
+    </div>
+    <div id="project2" class="project2 container">
+      <h2>Project 2</h2>
+      <p>Description of Project 2 goes here</p>
+    </div>
+    <div id="project3" class="project3 container">
+      <h2>Project 3</h2>
+      <p>Description of Project 3 goes here</p>
+    </div>
+  </section>
+  <!-- Section3 end-->
+
+
+  <!-- Section4 start-->
+  <section id="other" class="other container">
+    <div class="other container">
+      <h1>Other</h1>
+    </div>
+  </section>
+  <!-- Section4 end-->
 </div>
 
 <script src="assets\js\app.js"></script>
+<script src="assets\js\googleapi.js"></script>
+<script src="assets\js\sheets.js"></script>
+
+
 
 </html>

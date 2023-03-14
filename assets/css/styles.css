@@ -18,8 +18,7 @@ a {
 
 .subcontainer{
     display: flex;
-    align-items: right;
-    justify-content: center;
+    text-align: top;
 }
 
 .introduction .subcontainer {
