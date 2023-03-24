@@ -1,47 +1,64 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
 }
 html{
-    font-size: 10px;
+  font-size: 10px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container{
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
+
 
 .subcontainer{
-    display: flex;
-    text-align: top;
+  display: flex;
+  text-align: center;
 }
 
-.introduction .subcontainer {
-    display: flex; /* use flexbox layout */
-    flex-direction: column; /* align items vertically */
-    align-items: center; /* center items horizontally */
-  }
-  
-  .introduction .subcontainer h2 {
-    margin: 0; /* remove any default margin */
-  }
-  
-  .introduction .links {
-    display: flex; /* use flexbox layout */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .introduction .links li {
-    margin-right: 10px;
-  }
-  
-  .introduction .links li:last-child {
-    margin-right: 0;
-  }
+.color-inverted, .color-inverted html {
+  filter: invert(1);
+}
+
+.color-inverted img {
+  filter: invert(1);
+}
+
+.invert-button {
+  position: fixed; /* Make sure this is 'fixed' */
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #424242;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  z-index: 1000; /* Add this line to ensure the button stays above other elements */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  /* Add this line to hide the sidebar by default */
+  display: none;
+}
+
+/* Add this rule to show the sidebar when the 'visible' class is added */
+.sidebar.visible {
+  display: flex;
+}

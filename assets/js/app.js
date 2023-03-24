@@ -6,8 +6,6 @@ document.getElementById("scroll-to-section").addEventListener("change", function
   }
 });
 
-
-
 //Sets the very first loading page to be the title page
 function scrollToSecondSection() {
   const section2 = document.getElementById('home');
@@ -17,6 +15,14 @@ function scrollToSecondSection() {
       top: section2Position,
       behavior: 'smooth'
   });
+}
+
+function toggleColorInversion() {
+  const body = document.querySelector("body");
+  const sidebar = document.querySelector(".sidebar");
+
+  body.classList.toggle("color-inverted");
+  sidebar.classList.toggle("color-inverted");
 }
 
 window.onload = scrollToSecondSection; // Call the function when the page loads or reloads

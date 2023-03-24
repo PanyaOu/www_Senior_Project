@@ -1,3 +1,7 @@
+/*Note that this has yet to work for me. I will continue trying to use google's API in the future but at the 
+moment it doesn't work*/
+
+
 // Client ID and API key from the Developer Console
 const CLIENT_ID = '243020814737-646jaqpgpuk401qsfkna8qmvrcdv9g72.apps.googleusercontent.com';
 const API_KEY = 'AIzaSyD4Bz2w76GzrUQeYWqkrFShu4lee8FrCfU';
