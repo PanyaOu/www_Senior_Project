@@ -15,6 +15,15 @@ a {
   width: 100%;
 }
 
+
+.aboutme{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 43px;
+  outline-style: auto;
+  outline-color: red;
+  margin: 20px;
+}
+
 .subcontainer{
   display: flex;
   text-align: center;
