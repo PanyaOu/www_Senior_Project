@@ -26,7 +26,7 @@
   justify-content: center;
   outline-style: auto;
   outline-color: purple;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .image-container img {
@@ -52,4 +52,18 @@
 
 .introduction .links li {
 margin-right: 10px;
+}
+
+.aboutme{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 43px;
+  outline-style: auto;
+  outline-color: red;
+  max-width: 75%;
+  margin-bottom: 20px;
+}
+
+.subcontainer{
+  display: flex;
+  text-align: center;
 }
