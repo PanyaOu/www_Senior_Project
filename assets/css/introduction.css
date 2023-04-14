@@ -1,7 +1,10 @@
+
+
 .introduction .subcontainer {
   display: flex; /* use flexbox layout */
   flex-direction: column; /* align items vertically */
   align-items: center; /* center items horizontally */
+  
 }
 
 .introduction-content {
@@ -10,6 +13,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  
+
 }
 
 #google-doc-content {
@@ -18,6 +23,8 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
+  
+  
 }
 
 .image-container {
@@ -26,6 +33,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .image-container img {
@@ -34,6 +42,7 @@
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 5px;
+  
 }
 
 .introduction .links {
