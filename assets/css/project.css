@@ -1,8 +1,42 @@
 .project {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-  margin: 0 auto;
+  padding-top: 1%;
+  margin-left: 7.5%;
+  outline-style: auto;
+  outline-color: aqua;
+  max-width: 90%;
+}
+
+.project .container{
+  outline-style: auto;
+  outline-color: black;
+  margin-bottom: 2%;
+}
+
+.project .container .project-container{
+  outline-style: auto;
+  outline-color: green;
+
+}
+
+.sidebar, .sidebar-inverted {
+  position: fixed;
+  list-style: none;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  outline-style: auto;
+  display: none;
+  outline-color: tomato;
+  z-index: 9999;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* Add this rule to show the sidebar when the 'visible' class is added */
+.sidebar.visible,
+.sidebar-inverted.visible {
+  display: flex;
 }

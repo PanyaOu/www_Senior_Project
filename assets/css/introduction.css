@@ -1,17 +1,32 @@
 .introduction{
   display: flex; /* use flexbox layout */
   flex-direction: column; /* align items vertically */
-  align-items: center; /* center items horizontally */
+  align-items: left; /* center items horizontally */
   outline-style: auto;
   outline-color: yellow;
+  margin-left: 30%;
+  max-width: 65%;
+}
+
+.name{
+  outline-style: auto;
+  outline-color: aqua;
+  margin: 5px;
+  max-width: 95%;
 }
 
 #google-doc-content {
-  flex-basis: 50%;
-  padding-right: 20px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  text-align: justify;
+
+}
+
+.aboutme{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  outline-style: auto;
+  outline-color: red;
+  max-width: 95%;
+  margin: 5px;
 }
 
 .section1{
@@ -22,11 +37,13 @@
 .image-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   outline-style: auto;
   outline-color: purple;
-  margin-bottom: 20px;
+  max-width: 95%;
+  margin: 5px;
+
 }
 
 .image-container img {
@@ -37,7 +54,7 @@
   border-radius: 5px;
   outline-style: auto;
   outline-color: teal;
-  margin: 20px;
+  
 }
 
 .introduction .links {
@@ -47,23 +64,12 @@
   justify-content: flex-start; /* align items to left */
   outline-style: auto;
   outline-color: black;
-  margin: 20px;
+  max-width: 95%;
+  margin: 5px;
 }
 
 .introduction .links li {
 margin-right: 10px;
 }
 
-.aboutme{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 43px;
-  outline-style: auto;
-  outline-color: red;
-  max-width: 75%;
-  margin-bottom: 20px;
-}
 
-.subcontainer{
-  display: flex;
-  text-align: center;
-}

@@ -1,4 +1,4 @@
-
+import {introductionDocURL,introductionSheetsURL} from "./DocumentLinks.js"
 //Fetches data from a google docs and populates a page on the index.html
 //ALL FORMATTING FROM GOOGLE DOCS IS SAVED. This is a current issue.
 /*
@@ -18,7 +18,7 @@ I have yet to get this to work as the text contains css that I do not yet
 know how to remove. */
 
 async function fetchGoogleDocContent() {
-  const googleDocUrl = 'https://docs.google.com/document/d/e/2PACX-1vQg5TRFar7qpB_ky6CURWWXMoQBZe_c-M11DKLGnBAjcCXfhebhAs3zxzQup3q84-ZetCIhVlF6wZEs/pub';
+  const googleDocUrl = introductionDocURL
   const response = await fetch(googleDocUrl);
   const html = await response.text();
   const parser = new DOMParser();
@@ -48,7 +48,7 @@ async function fetchGoogleDocContent() {
 //fetches information from a google spreadsheet and makes them into links to populate
 //the introduction page.
 async function fetchGoogleSheetData() {
-  const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-Io5S4WV608Q9SEL3E1cmqtd2u_RYXp0Sj50nLhomJV9XfkHlk6iOhbf0xtfxHjXXj0JyMYRcIl-e/pubhtml';
+  const sheetUrl = introductionSheetsURL;
   const response = await fetch(sheetUrl);
   const html = await response.text();
   const parser = new DOMParser();

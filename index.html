@@ -14,14 +14,20 @@
 
 </head>
 <button class="invert-button" onclick="toggleColorInversion()">Invert Colors</button>
-
+<div class="sidebar" id="inverse-sidebar-id">
+  <ul>
+    <li><a href="#project1" class="project-link">Project 1</a></li>
+    <li><a href="#project2" class="project-link">Project 2</a></li>
+    <li><a href="#project3" class="project-link">Project 3</a></li>
+  </ul>
+</div>
 <div>
   <!-- Section1 start -->
     <div class = "section1">
       <section>
         <h1>Introduction</h1>
           <div class="introduction subcontainer">
-            <h2>Panya</h2>
+            <h2 class ="name">Panya</h2>
             <!-- <ul class="links">
               <li><a href="https://www.google.com" target="_blank">Google</a></li>
               <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
@@ -59,26 +65,21 @@
     <section id="project" class="project container">
       <div class="project container">
         <h1>Projects</h1>
-        <div class="sidebar">
-          <ul>
-            <li><a href="#project1" class="project-link">Project 1</a></li>
-            <li><a href="#project2" class="project-link">Project 2</a></li>
-            <li><a href="#project3" class="project-link">Project 3</a></li>
-          </ul>
-        </div>
-      </div>
-      <div >
-        <div id="project1" class="project container project-container">
-          <h2>Project 1</h2>
-          <p>Description of Project 1 goes here</p>
-        </div>
-        <div id="project2" class="project container project-container">
-          <h2>Project 2</h2>
-          <p>Description of Project 2 goes here</p>
-        </div>
-        <div id="project3" class="project container project-container">
-          <h2>Project 3</h2>
-          <p>Description of Project 3 goes here</p>
+
+
+        <div>
+          <div id="project1" class="project container project-container">
+            <h2>Project 1</h2>
+            <p>Description of Project 1 goes here</p>
+          </div>
+          <div id="project2" class="project container project-container">
+            <h2>Project 2</h2>
+            <p>Description of Project 2 goes here</p>
+          </div>
+          <div id="project3" class="project container project-container">
+            <h2>Project 3</h2>
+            <p>Description of Project 3 goes here</p>
+          </div>
         </div>
       </div>
     </section>
@@ -98,6 +99,7 @@
 
 <script src="assets\js\app.js"></script>
 <script src="assets\js\project.js"></script>
-<script src="assets\js\introduction.js"></script>
+<script src="assets\js\introduction.js" type="module"></script>
+
 
 </html>
