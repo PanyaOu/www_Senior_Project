@@ -27,14 +27,14 @@ function setActiveProjectLink() {
   const myElement = document.getElementById("inverse-sidebar-id");
 
 
-  console.log("Section3 Top", section3Top);
-  console.log("section3Bottom", section3Bottom);
-  console.log("scrollPosition", scrollPosition);
+  // console.log("Section3 Top", section3Top);
+  // console.log("section3Bottom", section3Bottom);
+  // console.log("scrollPosition", scrollPosition);
 
   if (myElement.classList.contains("sidebar")) {
     const container = document.querySelector(".sidebar");
     const myElementHeight = container.offsetHeight;
-    console.log("myElementHeight", myElementHeight);
+    // console.log("myElementHeight", myElementHeight);
 
     if (scrollPosition >= section3Top && scrollPosition < section3Bottom - myElementHeight*2) {
       sidebar.classList.add("visible");
@@ -44,7 +44,7 @@ function setActiveProjectLink() {
   } else {
     const container = document.querySelector(".sidebar-inverted");
     const myElementHeight = container.offsetHeight;
-    console.log("myElementHeight", myElementHeight);
+    // console.log("myElementHeight", myElementHeight);
 
     if (scrollPosition >= section3Top && scrollPosition < section3Bottom - myElementHeight*2) {
       sidebar_inverted.classList.add("visible");

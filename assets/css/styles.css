@@ -5,8 +5,15 @@
   background-color: white;
 }
 
-a {
+
+a{
   text-decoration: none;
+  color: black; 
+}
+
+a:visited{
+  text-decoration: none;
+  color:black;
 }
 
 .container{
@@ -14,9 +21,16 @@ a {
   width: 100%;
 }
 
+.title-container{
+  min-height: 150vh;
+  width: 100%;
+}
+
 /* COLOR INVERTED BUTTON*/
 .color-inverted, .color-inverted html .invert-button {
   filter: invert(1);
+  outline-style: solid;
+  outline-color:black;
 }
 
 .color-inverted img {
@@ -36,5 +50,6 @@ a {
   border-radius: 8px;
   z-index: 1000; /* Add this line to ensure the button stays above other elements */
 }
+
 
 

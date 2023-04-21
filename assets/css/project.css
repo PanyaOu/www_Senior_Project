@@ -1,11 +1,12 @@
+/*
 .project {
   text-align: center;
   display: flex;
   flex-direction: column;
   padding-top: 1%;
-  margin-left: 7.5%;
   outline-style: auto;
   outline-color: aqua;
+  margin-left: 7.5%;
   max-width: 90%;
 }
 
@@ -20,6 +21,103 @@
   outline-color: green;
 
 }
+*/
+
+.section3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline-style: solid;
+  outline-color: yellow;
+  /*
+  margin: 0;
+  */
+  font-family: Arial, sans-serif;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel{
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  left: 25%;
+  width: 60vw;
+  height: 70vh;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5%;
+}
+
+.carousel-inner{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 5%;
+  margin-top: 5%;
+  gap: 50px;
+}
+
+.carousel-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
+  text-align: center;
+  color: #333;
+  opacity: 0.3;
+  transition: all 0.5s;
+  pointer-events: none;
+  outline-style: auto;
+  outline-color: red;
+}
+
+.carousel-item.active{
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.section3 button{
+  display: inline-block;
+  bottom: 50px;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+#previous{
+  margin-right: 10%;
+}
+
+button:hover{
+  background-color: #555;
+}
+
 
 .sidebar, .sidebar-inverted {
   position: fixed;

@@ -1,4 +1,6 @@
+
 import {introductionDocURL,introductionSheetsURL} from "./DocumentLinks.js"
+
 //Fetches data from a google docs and populates a page on the index.html
 //ALL FORMATTING FROM GOOGLE DOCS IS SAVED. This is a current issue.
 /*
@@ -25,7 +27,7 @@ async function fetchGoogleDocContent() {
   const doc = parser.parseFromString(html, 'text/html');
   const content = doc.querySelector('#contents');
 
-  console.log(content);
+  // console.log(content);
 
 
   // Fetch plain text

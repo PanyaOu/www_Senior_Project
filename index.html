@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets\css\styles.css">
   <link rel="stylesheet" href="assets\css\introduction.css">
   <link rel="stylesheet" href="assets\css\project.css">
+  <link rel="stylesheet" href="assets\css\title.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
@@ -16,14 +17,14 @@
 <button class="invert-button" onclick="toggleColorInversion()">Invert Colors</button>
 <div class="sidebar" id="inverse-sidebar-id">
   <ul>
-    <li><a href="#project1" class="project-link">Project 1</a></li>
-    <li><a href="#project2" class="project-link">Project 2</a></li>
-    <li><a href="#project3" class="project-link">Project 3</a></li>
+    <li><a href="#section1" class="project-link">Introduction</a></li>
+    <li><a href="#section2" class="project-link">Title Page</a></li>
+    <li><a href="#section4" class="project-link">Other</a></li>
   </ul>
 </div>
 <div>
   <!-- Section1 start -->
-    <div class = "section1">
+    <div class = "section1" id="section1">
       <section>
         <h1>Introduction</h1>
           <div class="introduction subcontainer">
@@ -43,9 +44,9 @@
   <!-- Section1 end-->
 
   <!-- Section2 start-->
-  <div class = "section2">
-    <section id="home" class="home container">
-      <div class="home container">
+  <div class = "section2" id="section2">
+    <section id="home">
+      <div class="home title_container">
         <h1>Title Page</h1>
         <div>
           <select id="scroll-to-section">
@@ -54,6 +55,13 @@
             <option value="#project">Projects</option>
             <option value="#other">Other</option>
           </select>
+
+          <div id="wrapper">
+            <div id="canvas_container">
+                <!-- style="display:none;"-->
+                <img id="first" src="./assets/images/img.jpg" style="display:none" >
+            </div>
+        </div>
         </div>
     </section>
   </div>
@@ -63,10 +71,21 @@
   <!-- Section3 start-->
   <div  class = "section3">
     <section id="project" class="project container">
-      <div class="project container">
+      <div class="project-container">
         <h1>Projects</h1>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item" id="item-1">Section1</div>
+            <div class="carousel-item" id="item-2">Section1</div>
+            <div class="carousel-item" id="item-3">Section1</div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="previous">Previous</button>
+          <button id="next">Next</button>
+        </div>
 
-
+<!--
         <div>
           <div id="project1" class="project container project-container">
             <h2>Project 1</h2>
@@ -81,6 +100,7 @@
             <p>Description of Project 3 goes here</p>
           </div>
         </div>
+      -->
       </div>
     </section>
   </div>
@@ -88,7 +108,7 @@
 
 
   <!-- Section4 start-->
-  <div class = "section4">
+  <div class = "section4" id="section4">
     <section id="other" class="other container">
       <div class="other container">
         <h1>Other</h1>
@@ -97,9 +117,11 @@
     <!-- Section4 end-->
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="assets\js\app.js"></script>
 <script src="assets\js\project.js"></script>
+<script src="assets\js\title.js"></script>
 <script src="assets\js\introduction.js" type="module"></script>
-
-
+<script src="assets\js\carousel.js"></script>
 </html>
