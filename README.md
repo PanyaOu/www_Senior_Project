@@ -36,4 +36,4 @@ https://docs.google.com/document/d/e/2PACX-1vQg5TRFar7qpB_ky6CURWWXMoQBZe_c-M11D
 4. Answer the prompted questions and provide the required information.
 5. An HTML file for your portfolio website will be automatically generated based on your inputs.
 
-This project offers a unique and simplified approach to website portfolio creation. If you have any issues or questions, feel free to open an issue in this GitHub repository. Happy coding!
+This project offers a unique and simplified approach to website portfolio creation.
