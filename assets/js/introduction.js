@@ -1,6 +1,4 @@
 
-import {introductionDocURL,introductionSheetsURL} from "./DocumentLinks.js"
-
 //Fetches data from a google docs and populates a page on the index.html
 //ALL FORMATTING FROM GOOGLE DOCS IS SAVED. This is a current issue.
 /*
@@ -18,6 +16,10 @@ async function fetchGoogleDocContent() {
 This function grabs the image and text seperately without the formatting.
 I have yet to get this to work as the text contains css that I do not yet 
 know how to remove. */
+
+const introductionDocURL = document.body.dataset.introductionDocUrl;
+const introductionSheetsURL = document.body.dataset.introductionSheetsUrl;
+
 
 async function fetchGoogleDocContent() {
   const googleDocUrl = introductionDocURL

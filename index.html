@@ -9,116 +9,187 @@
   <link rel="stylesheet" href="assets\css\introduction.css">
   <link rel="stylesheet" href="assets\css\project.css">
   <link rel="stylesheet" href="assets\css\title.css">
+  <link rel="stylesheet" href="assets\css\contactme.css">
+  <link rel="stylesheet" href="assets\css\other.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <body data-introduction-doc-url="https://docs.google.com/document/d/e/2PACX-1vQg5TRFar7qpB_ky6CURWWXMoQBZe_c-M11DKLGnBAjcCXfhebhAs3zxzQup3q84-ZetCIhVlF6wZEs/pub" data-introduction-sheets-url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-Io5S4WV608Q9SEL3E1cmqtd2u_RYXp0Sj50nLhomJV9XfkHlk6iOhbf0xtfxHjXXj0JyMYRcIl-e/pubhtml"
 
 </head>
-<button class="invert-button" onclick="toggleColorInversion()">Invert Colors</button>
-<div class="sidebar" id="inverse-sidebar-id">
-  <ul>
-    <li><a href="#section1" class="project-link">Introduction</a></li>
-    <li><a href="#section2" class="project-link">Title Page</a></li>
-    <li><a href="#section4" class="project-link">Other</a></li>
-  </ul>
-</div>
-<div>
-  <!-- Section1 start -->
-    <div class = "section1" id="section1">
-      <section>
-        <h1>Introduction</h1>
-          <div class="introduction subcontainer">
-            <h2 class ="name">Panya</h2>
-            <!-- <ul class="links">
-              <li><a href="https://www.google.com" target="_blank">Google</a></li>
-              <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-            </ul> -->
-            <ul class="links" id="links-container"></ul> 
-            <!-- <div class="aboutme subcontainer" id="google-doc-content"></div> -->
-            <div class="image-container" id="google-doc-images"></div>
-            <div class="aboutme subcontainer" id="google-doc-content"></div>
+<body>
+  <button class="invert-button" onclick="toggleColorInversion()">
+    <i class="fas fa-adjust"></i>
+  </button>
+    <div class="sidebar" id="inverse-sidebar-id">
+    <ul>
+      <li><a href="#section1" class="project-link">Introduction</a></li>
+      <li><a href="#section2" class="project-link">Title Page</a></li>
+      <li><a href="#section4" class="project-link">Other</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <!-- Section1 start -->
+      <div class = "section1" id="section1">
+        <section>
+          <h1>Introduction</h1>
+            <div class="introduction subcontainer">
+              <h2 class ="name">Panya</h2>
+              <!-- <ul class="links">
+                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+              </ul> -->
+              <ul class="links" id="links-container"></ul> 
+              <!-- <div class="aboutme subcontainer" id="google-doc-content"></div> -->
+              <div class="image-container" id="google-doc-images"></div>
+              <div class="aboutme subcontainer" id="google-doc-content"></div>
+            </div>
+        </section>
+      </div>
+
+    <!-- Section1 end-->
+
+    <!-- Section2 start-->
+    <div class = "section2" id="section2">
+      <section id="home">
+        <div class="home title_container">
+          <h1 style="text-align: center;">Title Page</h1>
+          <div>
+            <div id="wrapper">
+              <div id="canvas_container">
+                  <!-- style="display:none;"-->
+                  <img id="first" src="./assets/images/img.jpg" style="display:none" >
+              </div>
+          </div>
           </div>
       </section>
     </div>
+    <!-- Section2 end-->
 
-  <!-- Section1 end-->
 
-  <!-- Section2 start-->
-  <div class = "section2" id="section2">
-    <section id="home">
-      <div class="home title_container">
-        <h1>Title Page</h1>
-        <div>
-          <select id="scroll-to-section">
-            <option value="">Select a section</option>
-            <option value="#introduction">Introduction</option>
-            <option value="#project">Projects</option>
-            <option value="#other">Other</option>
-          </select>
-
-          <div id="wrapper">
-            <div id="canvas_container">
-                <!-- style="display:none;"-->
-                <img id="first" src="./assets/images/img.jpg" style="display:none" >
+    <!-- Section3 start-->
+    <div  class = "section3">
+      <section id="project" class="project container">
+        <div class="project-container">
+          <h1>Projects</h1>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item" id="item-1">
+                <div class="item-content">
+                  <iframe id="gameFrame" src="html/tetris.html"></iframe>
+                  <button class="fullscreen">Fullscreen</button>
+                </div>
+              </div>
+              <div class="carousel-item" id="item-2">
+                <div class="item-content">
+                  Section 2
+                  <button class="fullscreen">Fullscreen</button>
+                </div>
+              </div>
+              <div class="carousel-item" id="item-3">
+                <div class="item-content">
+                  Section 3
+                  <button class="fullscreen">Fullscreen</button>
+                </div>
+              </div>
             </div>
-        </div>
-        </div>
-    </section>
-  </div>
-  <!-- Section2 end-->
-
-
-  <!-- Section3 start-->
-  <div  class = "section3">
-    <section id="project" class="project container">
-      <div class="project-container">
-        <h1>Projects</h1>
-        <div class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item" id="item-1">Section1</div>
-            <div class="carousel-item" id="item-2">Section1</div>
-            <div class="carousel-item" id="item-3">Section1</div>
+          </div>
+          <div class="button-container">
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
           </div>
         </div>
-        <div class="button-container">
-          <button id="previous">Previous</button>
-          <button id="next">Next</button>
-        </div>
-
-<!--
-        <div>
-          <div id="project1" class="project container project-container">
-            <h2>Project 1</h2>
-            <p>Description of Project 1 goes here</p>
-          </div>
-          <div id="project2" class="project container project-container">
-            <h2>Project 2</h2>
-            <p>Description of Project 2 goes here</p>
-          </div>
-          <div id="project3" class="project container project-container">
-            <h2>Project 3</h2>
-            <p>Description of Project 3 goes here</p>
-          </div>
-        </div>
-      -->
-      </div>
-    </section>
-  </div>
-  <!-- Section3 end-->
+      </section>
+    </div>
+    <!-- Section3 end-->
 
 
   <!-- Section4 start-->
-  <div class = "section4" id="section4">
+  <div class="section4" id="section4">
     <section id="other" class="other container">
-      <div class="other container">
-        <h1>Other</h1>
+      <h1>Other</h1>
+      <div class="other-sections">
+        <div class="other-card">
+          <h1>My Calendar</h1>
+          <div class="other-iframe calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?src=d4d2d26cb660bf43305b01eec7b5b6600fe49804e2e3ef9c4882b6cecec0a681%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+        <div class="other-card">
+          <h1>Gallery</h1>
+          <div class="image-container">
+            <!-- Add more images as needed -->
+          </div>
+        </div>
+        <div class="other-card">
+          <h1>Resources</h1>
+          <ul class="resource-list">
+            <li><a href="path/to/resource1.pdf" target="_blank">Resource 1</a></li>
+            <li><a href="path/to/resource2.pdf" target="_blank">Resource 2</a></li>
+            <!-- Add more resources as needed -->
+          </ul>
+        </div>
+        <div class="other-card">
+          <h1>Testimonials</h1>
+          <div class="testimonial">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum, felis nec vestibulum finibus, ex sem hendrerit augue, ac lobortis erat tellus at risus.</p>
+            </blockquote>
+            <p class="author">John Doe</p>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              <p>Ut eleifend odio vitae ultrices hendrerit. Suspendisse dapibus ex ut ex volutpat efficitur.</p>
+            </blockquote>
+            <p class="author">Jane Smith</p>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
       </div>
     </section>
-    <!-- Section4 end-->
-</div>
+  </div>
+  <!-- Section4 end-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+      <!-- Section5 start-->
+      <div class = "section5" id="section5">
+        <section id="contact-me" class="contact-me container">
+          <div class="contact-me container">
+              <h1 class="center-align">Contact Me</h1>
+              <form id="contact-form" action="submit_form.php" method="POST">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Section5 end-->
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" onerror="this.onerror=null;this.src='assets/js/gsap.min.js';"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" onerror="this.onerror=null;this.src='assets/js/three.min.js';"></script>
+
 <script src="assets\js\app.js"></script>
 <script src="assets\js\project.js"></script>
 <script src="assets\js\title.js"></script>

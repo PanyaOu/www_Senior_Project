@@ -1,0 +1,7 @@
+Do you want an introduction page? (yes/no): yes
+Do you want a title page? (yes/no): yes
+Do you want a project page? (yes/no): yes
+Do you want an other page? (yes/no): yes
+Do you want a contact me page? (yes/no): yes
+Please enter any additional links you want to include, separated by a comma on the line below (e.g., link1,link2):
+https://docs.google.com/document/d/e/2PACX-1vQg5TRFar7qpB_ky6CURWWXMoQBZe_c-M11DKLGnBAjcCXfhebhAs3zxzQup3q84-ZetCIhVlF6wZEs/pub, https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-Io5S4WV608Q9SEL3E1cmqtd2u_RYXp0Sj50nLhomJV9XfkHlk6iOhbf0xtfxHjXXj0JyMYRcIl-e/pubhtml

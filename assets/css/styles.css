@@ -51,5 +51,15 @@ a:visited{
   z-index: 1000; /* Add this line to ensure the button stays above other elements */
 }
 
+.invert-button i {
+  transition: transform 0.3s; /* Added transition property */
+}
 
+.invert-button:hover i {
+  transform: rotate(180deg); /* Example animation on hover */
+}
+
+.invert-button:active i {
+  transform: scale(0.8); /* Example animation when pressed */
+}
 

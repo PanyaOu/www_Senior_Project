@@ -3,110 +3,54 @@ function setActiveProjectLink() {
   const sidebar_inverted = document.querySelector(".sidebar-inverted");
   const projectLinks = document.querySelectorAll(".project-link");
   const projects = document.querySelectorAll(".project-container");
-  const section3 = document.querySelector(".section3");
+
+  const calender = document.querySelector(".other-iframe"); // Get the calender element
+
   const scrollPosition = window.pageYOffset;
 
-  let isWithinProjects = false;
+  let activeProjectIndex = null;
+  let showSidebar = false;  // flag to track if the sidebar should be visible
 
+  // Determine which project is currently in view
   projects.forEach((project, index) => {
     const projectTop = project.offsetTop;
     const projectBottom = projectTop + project.offsetHeight;
 
     if (scrollPosition >= projectTop && scrollPosition < projectBottom) {
-      isWithinProjects = true;
-      projectLinks.forEach(link => link.classList.remove("active"));
-      projectLinks[index].classList.add("active");
+      activeProjectIndex = index;
     }
   });
 
-  const section3Top = section3.offsetTop;
-  const section3Bottom = section3Top + section3.offsetHeight;
-
-  // Show or hide the sidebar based on the user's scroll position
-
-  const myElement = document.getElementById("inverse-sidebar-id");
-
-
-  // console.log("Section3 Top", section3Top);
-  // console.log("section3Bottom", section3Bottom);
-  // console.log("scrollPosition", scrollPosition);
-
-  if (myElement.classList.contains("sidebar")) {
-    const container = document.querySelector(".sidebar");
-    const myElementHeight = container.offsetHeight;
-    // console.log("myElementHeight", myElementHeight);
-
-    if (scrollPosition >= section3Top && scrollPosition < section3Bottom - myElementHeight*2) {
-      sidebar.classList.add("visible");
+  // Update the active project link
+  projectLinks.forEach((link, index) => {
+    if (index === activeProjectIndex) {
+      link.classList.add("active");
     } else {
-      sidebar.classList.remove("visible");
-    }
-  } else {
-    const container = document.querySelector(".sidebar-inverted");
-    const myElementHeight = container.offsetHeight;
-    // console.log("myElementHeight", myElementHeight);
-
-    if (scrollPosition >= section3Top && scrollPosition < section3Bottom - myElementHeight*2) {
-      sidebar_inverted.classList.add("visible");
-    } else {
-      sidebar_inverted.classList.remove("visible");
-    }
-  }
-
-
-}
-window.addEventListener("scroll", setActiveProjectLink);
-
-/*
-function setActiveProjectLink() {
-  const sidebar = document.querySelector(".sidebar");
-  const sidebar_inverted = document.querySelector(".sidebar-inverted");
-
-  const projectLinks = document.querySelectorAll(".project-link");
-  const projects = document.querySelectorAll(".project-container");
-  const projectSection = document.querySelector("#project");
-  const otherSection = document.querySelector("#other");
-  const scrollPosition = window.pageYOffset;
-
-  let isWithinProjects = false;
-
-  projects.forEach((project, index) => {
-    const projectTop = project.offsetTop;
-    const projectBottom = projectTop + project.offsetHeight;
-
-    if (scrollPosition >= projectTop && scrollPosition < projectBottom) {
-      isWithinProjects = true;
-      projectLinks.forEach(link => link.classList.remove("active"));
-      projectLinks[index].classList.add("active");
+      link.classList.remove("active");
     }
   });
 
-  const projectSectionTop = projectSection.offsetTop;
-  projectSectionTop = 1734
-  const otherTop = otherSection.offsetTop;
-  const otherBottom = otherTop + otherSection.offsetHeight;
+  // Check if user is on the title page (section2) or any project page
+  const titlePage = document.querySelector('#section2');
+  const titlePageTop = titlePage.offsetTop;
+  const titlePageBottom = titlePageTop + titlePage.offsetHeight;
 
-  const isWithinOtherSection = scrollPosition >= otherTop && scrollPosition < otherBottom;
+  if (scrollPosition >= titlePageTop && scrollPosition < titlePageBottom) {
+    showSidebar = true;
+  }
 
   // Show or hide the sidebar based on the user's scroll position
+  if (showSidebar || activeProjectIndex !== null) {
+    sidebar.classList.add("visible");
+    sidebar_inverted.classList.add("visible");
 
-  const myElement = document.getElementById("inverse-sidebar-id");
-  console.log(scrollPosition, projectSectionTop)
-  if (myElement.classList.contains("sidebar")) {
-    if (scrollPosition >= projectSectionTop && !isWithinOtherSection) {
-      sidebar.classList.add("visible");
-    } else {
-      sidebar.classList.remove("visible");
-    }
+    calender.style.marginLeft = "200px"; // Adjust the margin when sidebar is visible
   } else {
-    if (scrollPosition >= projectSectionTop && !isWithinOtherSection) {
-      sidebar_inverted.classList.add("visible");
-    } else {
-      sidebar_inverted.classList.remove("visible");
-    }
+    sidebar.classList.remove("visible");
+    sidebar_inverted.classList.remove("visible");
+
+    calender.style.marginLeft = "0"; // Reset the margin when sidebar is hidden
   }
 }
 
-
 window.addEventListener("scroll", setActiveProjectLink);
-*/

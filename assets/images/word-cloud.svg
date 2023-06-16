@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="word-cloud" width="500" height="500"><!-- Code injected by live-server -->
+<script>
+	//   &lt;-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i &lt; sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href &amp;&amp; typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&amp;|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') &gt;= 0 ? '&amp;' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage &amp;&amp; !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// 
+</script>
+<g transform="translate(250,250)"><text text-anchor="middle" transform="translate(90,78)rotate(90)" style="font-size: 100px; fill: rgb(71, 188, 235); font-family: Arial;">Happy</text><text text-anchor="middle" transform="translate(71,-94)rotate(0)" style="font-size: 100px; fill: rgb(235, 71, 74); font-family: Arial;">Happy</text><text text-anchor="middle" transform="translate(-71,-9)rotate(0)" style="font-size: 100px; fill: rgb(80, 71, 235); font-family: Arial;">Happy</text><text text-anchor="middle" transform="translate(-73,76)rotate(0)" style="font-size: 100px; fill: rgb(235, 120, 71); font-family: Arial;">Happy</text><text text-anchor="middle" transform="translate(-33,-178)rotate(0)" style="font-size: 90px; fill: rgb(115, 235, 71); font-family: Arial;">Exciting </text><text text-anchor="middle" transform="translate(-31,168)rotate(0)" style="font-size: 70px; fill: rgb(167, 71, 235); font-family: Arial;">Joyful </text><text text-anchor="middle" transform="translate(182,56)rotate(90)" style="font-size: 50px; fill: rgb(235, 158, 71); font-family: Arial;">Innovative</text><text text-anchor="middle" transform="translate(-148,-107)rotate(0)" style="font-size: 40px; fill: rgb(235, 207, 71); font-family: Arial;">Peaceful </text><text text-anchor="middle" transform="translate(-54,216)rotate(0)" style="font-size: 30px; fill: rgb(161, 71, 235); font-family: Arial;">Friendly </text><text text-anchor="middle" transform="translate(-165,152)rotate(90)" style="font-size: 30px; fill: rgb(235, 71, 112); font-family: Arial;">Friendly </text><text text-anchor="middle" transform="translate(-209,122)rotate(90)" style="font-size: 20px; fill: rgb(71, 137, 235); font-family: Arial;">Nice </text><text text-anchor="middle" transform="translate(36,211)rotate(0)" style="font-size: 20px; fill: rgb(235, 71, 109); font-family: Arial;">Nice </text><text text-anchor="middle" transform="translate(-206,168)rotate(0)" style="font-size: 20px; fill: rgb(139, 235, 71); font-family: Arial;">Nice </text><text text-anchor="middle" transform="translate(182,193)rotate(0)" style="font-size: 20px; fill: rgb(235, 71, 183); font-family: Arial;">Nice </text><text text-anchor="middle" transform="translate(60,6)rotate(90)" style="font-size: 10px; fill: rgb(71, 235, 148); font-family: Arial;">Sad </text><text text-anchor="middle" transform="translate(-3,-73)rotate(0)" style="font-size: 10px; fill: rgb(235, 71, 148); font-family: Arial;">Sad </text><text text-anchor="middle" transform="translate(-50,119)rotate(0)" style="font-size: 10px; fill: rgb(71, 235, 205); font-family: Arial;">Sad </text><text text-anchor="middle" transform="translate(-110,-80)rotate(0)" style="font-size: 10px; fill: rgb(235, 71, 197); font-family: Arial;">Sad </text></g></svg>

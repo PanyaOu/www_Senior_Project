@@ -1,0 +1,58 @@
+.other-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.other-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.other-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.resource-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-list li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.resource-list li a:hover {
+    color: #555;
+}
+
+.testimonial {
+    margin-bottom: 1rem;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial p.author {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.other h1 {
+    text-align: center;
+}
