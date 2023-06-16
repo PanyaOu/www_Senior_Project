@@ -4,14 +4,6 @@
 
 This project offers a simplified solution to create a personalized website portfolio. With this Python script, users are prompted with a series of questions from a text file. The provided responses are processed, and an HTML file is generated for the website portfolio, significantly simplifying the process of content updates and maintenance. This approach is user-friendly and does not require extensive technical knowledge in web development.
 
-## Features
-
-* Interactive Q&A Mechanism
-* Automated HTML Generation
-* User-friendly Interface
-* Optimized Content Display
-* Seamless Contact Options
-
 ## Usage
 
 The input file prompts you with several questions, such as:
