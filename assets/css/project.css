@@ -40,6 +40,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 .carousel{
   display: flex;
   justify-content: space-between;
@@ -73,6 +75,7 @@
   opacity: 0.3;
   transition: all 0.5s;
   border: 1px solid #ccc;
+  overflow: hidden;
 
 }
 
@@ -186,6 +189,42 @@
   transition: background-color 0.3s;
 }
 
-.project-container button:hover {
-  background-color: #555;
+
+.carousel-description{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: 100%;
+  height: auto;
+}
+
+.proj-title{
+  display: inline-block;
+  outline-style: auto;
+}
+
+.proj-img{
+  display: inline-block;
+}
+
+.proj-desc{
+  display: inline-block;
+  outline-color: bisque;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.proj-link{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  outline-color: blue;
 }
